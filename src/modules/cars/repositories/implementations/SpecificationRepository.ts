@@ -1,11 +1,12 @@
-import { Specification } from "../model/Specification";
+import { Specification } from "../../model/Specification";
 import {
   ICreateSpecificationDTO,
   ISpecificationRepository,
-} from "./ISpecificationRepository";
+} from "../ISpecificationRepository";
 
 class SpecificationRepository implements ISpecificationRepository {
   private specifications: Specification[];
+
   constructor() {
     this.specifications = [];
   }
